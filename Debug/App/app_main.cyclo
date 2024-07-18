@@ -1,0 +1,13 @@
+../App/app_main.c:47:6:app_main	14
+../App/app_main.c:142:6:HAL_GPIO_EXTI_Callback	7
+../App/app_main.c:176:6:HAL_RTC_AlarmAEventCallback	2
+../App/app_main.c:191:6:HAL_TIM_PeriodElapsedCallback	3
+../App/app_main.c:204:6:openValve	2
+../App/app_main.c:223:6:closeValve	2
+../App/app_main.c:241:6:resetFloodEvent	4
+../App/app_main.c:257:10:measureBattery	2
+../App/app_main.c:280:6:monitorBattery	2
+../App/app_main.c:292:6:statusled	1
+../App/app_main.c:302:6:batteryled	1
+../App/app_main.c:312:6:alert	1
+../App/app_main.c:321:6:console	1
