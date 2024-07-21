@@ -73,7 +73,7 @@ void app_main(void)
         uint32_t now = HAL_GetTick();
 
         // Test Mode activated by long pressing the button
-        if(pressDuration >= 2000 && !floodFlag)
+        if(pressDuration >= 2000 && !floodFlag && !Low_battery)
         {
             strcpy(message, "Test Mode\r\n");
             console(message);

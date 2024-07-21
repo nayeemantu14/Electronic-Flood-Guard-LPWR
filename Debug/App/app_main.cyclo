@@ -1,4 +1,4 @@
-../App/app_main.c:48:6:app_main	13
+../App/app_main.c:48:6:app_main	14
 ../App/app_main.c:136:6:HAL_GPIO_EXTI_Callback	7
 ../App/app_main.c:169:6:HAL_RTC_AlarmAEventCallback	1
 ../App/app_main.c:179:6:HAL_TIM_PeriodElapsedCallback	3
