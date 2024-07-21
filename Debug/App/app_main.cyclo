@@ -6,10 +6,10 @@
 ../App/app_main.c:211:6:closeValve	2
 ../App/app_main.c:229:6:resetFloodEvent	4
 ../App/app_main.c:245:10:measureBattery	4
-../App/app_main.c:272:6:monitorBattery	3
-../App/app_main.c:291:6:statusled	1
-../App/app_main.c:301:6:batteryled	1
-../App/app_main.c:309:6:batteryAlarm	1
-../App/app_main.c:318:6:RTC_AlarmConfig	2
-../App/app_main.c:340:6:alert	1
-../App/app_main.c:349:6:console	1
+../App/app_main.c:272:6:monitorBattery	4
+../App/app_main.c:294:6:statusled	1
+../App/app_main.c:304:6:batteryled	1
+../App/app_main.c:312:6:batteryAlarm	1
+../App/app_main.c:321:6:RTC_AlarmConfig	2
+../App/app_main.c:343:6:alert	1
+../App/app_main.c:352:6:console	1

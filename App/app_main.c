@@ -279,8 +279,11 @@ void monitorBattery(void)
     }
     else if(Low_battery == 2)
     {
-    	RTC_AlarmConfig();
-    	closeValve();	// Close Valve if Critically low Battery
+
+		if (valve_open == 1) {
+			closeValve();	// Close Valve if Critically low Battery
+			RTC_AlarmConfig();
+		}
     	batteryAlarm(); // Activate battery Alarm if critically low battery
     }
     sprintf(message, "Battery Voltage: %d\r\n", vBatt); // Format battery voltage message
