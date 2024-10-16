@@ -91,12 +91,14 @@ void app_main(void)
 			statusled();
 			openValve();
 		}
-		// Servicing the short button press during a flood event
+		// Servicing the short button press during a flood event  (now - holdTime >= 1000)
 		else if(floodFlag && pressDuration >= 1000 && Low_battery != 2)
 		{
 			strcpy(message, "Reset\r\n");
 			console(message);
 			pressDuration = 0;
+			holdTime = 0;
+			releaseTime = 0;
 			resetFloodEvent();
 		}
 		// Close the valve if the flood flag is set
@@ -259,11 +261,11 @@ uint16_t measureBattery(void)
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET); 	// Disable battery voltage measurement
 
 	// Check battery voltage threshold
-	if(analogbatt < 2950 && analogbatt >= 2800)
+	if(analogbatt < 3200 && analogbatt >= 3100)
 	{
 		Low_battery = 1; 									// Set low battery flag if voltage is below threshold
 	}
-	else if(analogbatt < 2800 && analogbatt > 1800)
+	else if(analogbatt < 2800 && analogbatt > 0)
 	{
 		Low_battery = 2; 									// Set low battery flag flag if voltage is below critical threshold
 	}
